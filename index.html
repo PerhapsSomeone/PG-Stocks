@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="manifest" href="site.webmanifest">
+		<link rel="apple-touch-icon" href="icon.png">
+		<!-- Place favicon.ico in the root directory -->
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/topbar.css">
+		<script src="http://www.chartjs.org/dist/2.7.2/Chart.bundle.js"></script>
+	</head>
+	<body>
+		<div class="page-wrap">
+		<ul>
+		<li><a class="currentChoice" href="index.html">|PG Stocks|</a></li>
+		</ul>
+
+		<!-- Google -->
+		<canvas id="googleChart"></canvas>
+		<div class="center">
+		<p id="googleCount">Owned: 0</p>
+		<button class="buyButton" onclick="buyStock(Google)">Buy</button>
+		<button class="sellButton" onclick="sellStock(Google)">Sell</button>
+		</div>
+
+		<!-- Yahoo -->
+		<canvas id="yahooChart"></canvas>
+		<div class="center">
+		<p id="yahooCount">Owned: 0</p>
+		<button class="buyButton" onclick="buyStock(Yahoo)">Buy</button>
+		<button class="sellButton" onclick="sellStock(Yahoo)">Sell</button>
+		</div>
+		<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+		<script src="js/vendor/jquery-3.2.1.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/charts.js"></script>
+		</div>
+		
+		<!--<footer class="site-footer">-->
+		<p id="balance" class="balanceText">5000$</p>
+		<!--</footer>-->
+	</body>
+</html>
