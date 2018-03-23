@@ -3,5 +3,6 @@ A simple page dedicated to trading stocks of companies with the goal to earn mon
 
 ## Further Development:
 - [x] Finish simple working page
-- [ ] Implement saving
-- [ ] More companies
+- [x] Implement saving
+- [x] More companies
+- [ ] Add Investments

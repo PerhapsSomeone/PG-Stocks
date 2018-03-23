@@ -40,3 +40,18 @@ var juhuuChart = new Chart(document.getElementById("juhuuChart"), {
     },
     "options": {}
 });
+
+var micronsoftChart = new Chart(document.getElementById("micronsoftChart"), {
+    "type": "line",
+    "data": {
+        "labels": [currentime.getHours() + ":" + currentime.getMinutes() + ":" + currentime.getSeconds()],
+        "datasets": [{
+            "label": "Micronsoft",
+            "data": [Micronsoft.worth],
+            "fill": false,
+            "borderColor": "rgb(75, 192, 192)",
+            "lineTension": 0.1
+        }]
+    },
+    "options": {}
+});

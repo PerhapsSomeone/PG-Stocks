@@ -21,7 +21,19 @@
 		<ul>
 		<li><a class="currentChoice" href="index.html">|PG Stocks|</a></li>
 		</ul>
-
+		<br />
+		<div class="center">
+		<button class="buyButton center" onclick="slideMenu('saveMenu')">Save/Load</button>
+		</div>
+		<div id="saveMenu" class="center" style="display: none">
+		<br />
+		<button onclick="saveGame()" class="buyButton">Save Game</button>	
+		<input type="text" id="key" placeholder="Your key" readonly>
+		<br /><br />
+		<button onclick="restoreGame()" class="buyButton">Load Game</button>	
+		
+		</div>
+			
 		<!-- Google -->
 		<canvas id="gügleChart"></canvas>
 		<div class="center">
@@ -37,11 +49,22 @@
 		<button class="buyButton" onclick="buyStock(Juhuu)">Buy</button>
 		<button class="sellButton" onclick="sellStock(Juhuu)">Sell</button>
 		</div>
+			
+		<!-- Micronsoft -->	
+		<canvas id="micronsoftChart"></canvas>
+		<div class="center">
+		<p id="micronsoftCount">Owned: 0</p>
+		<button class="buyButton" onclick="buyStock(Micronsoft)">Buy</button>
+		<button class="sellButton" onclick="sellStock(Micronsoft)">Sell</button>
+		</div>
+		
 		<script src="js/vendor/modernizr-3.5.0.min.js"></script>
 		<script src="js/vendor/jquery-3.2.1.min.js"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/main.js"></script>
 		<script src="js/charts.js"></script>
+		<script src="js/saving.js"></script>
+		<script src="js/md5.js"></script>
 		</div>
 		
 		

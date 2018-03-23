@@ -1,3 +1,7 @@
+function slideMenu(target) {
+	$("#" + target).slideToggle("slow");
+}
+
 var currentime = new Date();
 var balance = 5000;
 
@@ -24,9 +28,9 @@ class stock {
 	}
 }
 
-const Gügle = new stock("gügleChart");
-const Juhuu = new stock("juhuuChart");
-const Micronsoft = new stock("micronChart")
+var Gügle = new stock("gügleChart");
+var Juhuu = new stock("juhuuChart");
+var Micronsoft = new stock("micronsoftChart")
 
 function randomIntFromInterval(min,max) {
     return Math.floor(Math.random()*(max-min+1)+min);
@@ -81,12 +85,13 @@ function tick() {
 	currentime = new Date();
 	genChange(Gügle);
 	genChange(Juhuu);
+	genChange(Micronsoft);
 }
 
 function loop() {
 	setInterval(function() {
 		tick();
-	}, 1500);
+	}, 1000);
 }
 
 loop();
