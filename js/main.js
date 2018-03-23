@@ -24,8 +24,9 @@ class stock {
 	}
 }
 
-const Google = new stock("googleChart");
-const Yahoo = new stock("yahooChart");
+const Gügle = new stock("gügleChart");
+const Juhuu = new stock("juhuuChart");
+const Micronsoft = new stock("micronChart")
 
 function randomIntFromInterval(min,max) {
     return Math.floor(Math.random()*(max-min+1)+min);
@@ -76,12 +77,16 @@ function updateBalance() {
 	document.getElementById("balance").innerHTML = Math.round(balance) + "$";
 }
 
+function tick() {
+	currentime = new Date();
+	genChange(Gügle);
+	genChange(Juhuu);
+}
+
 function loop() {
-	setInterval(function() {	
-		currentime = new Date();
-		genChange(Google);
-		genChange(Yahoo);
-	}, 1000);
+	setInterval(function() {
+		tick();
+	}, 1500);
 }
 
 loop();

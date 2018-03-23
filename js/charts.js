@@ -1,7 +1,7 @@
 var currentime = new Date();
 
-function silentErrorHandler() {return true;}
-window.onerror=silentErrorHandler;
+//function silentErrorHandler() {return true;}
+//window.onerror=silentErrorHandler;
 
 function addData(chart, label, data) {
     chart.data.labels.push(label);
@@ -11,13 +11,13 @@ function addData(chart, label, data) {
     chart.update();
 }
 
-var googleChart = new Chart(document.getElementById("googleChart"), {
+var gügleChart = new Chart(document.getElementById("gügleChart"), {
     "type": "line",
     "data": {
         "labels": [currentime.getHours() + ":" + currentime.getMinutes() + ":" + currentime.getSeconds()],
         "datasets": [{
-            "label": "Google",
-            "data": [Google.worth],
+            "label": "Gügle",
+            "data": [Gügle.worth],
             "fill": false,
             "borderColor": "rgb(75, 192, 192)",
             "lineTension": 0.1
@@ -26,13 +26,13 @@ var googleChart = new Chart(document.getElementById("googleChart"), {
     "options": {}
 });
 
-var yahooChart = new Chart(document.getElementById("yahooChart"), {
+var juhuuChart = new Chart(document.getElementById("juhuuChart"), {
     "type": "line",
     "data": {
         "labels": [currentime.getHours() + ":" + currentime.getMinutes() + ":" + currentime.getSeconds()],
         "datasets": [{
-            "label": "Yahoo",
-            "data": [Google.worth],
+            "label": "Juhuu",
+            "data": [Juhuu.worth],
             "fill": false,
             "borderColor": "rgb(75, 192, 192)",
             "lineTension": 0.1
