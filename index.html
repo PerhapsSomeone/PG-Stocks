@@ -23,7 +23,9 @@
 		</ul>
 		<br />
 		<div class="center">
-		<button class="buyButton center" onclick="slideMenu('saveMenu')">Save/Load</button>
+
+		<!-- Savegame Menu -->
+		<button class="buyButton center" onclick="slideMenu('saveMenu')">Savegame</button>
 		</div>
 		<div id="saveMenu" class="center" style="display: none">
 		<br />
@@ -31,9 +33,14 @@
 		<input type="text" id="key" placeholder="Your key" readonly>
 		<br /><br />
 		<button onclick="restoreGame()" class="buyButton">Load Game</button>	
-		
 		</div>
-			
+		<br />
+
+		<!-- Clear Graph Button -->		
+		<div class="center">
+		<button class="buyButton" onclick="clearAll()">Clear Graphs</button> 
+		</div>
+		<br />
 		<!-- Google -->
 		<canvas id="gügleChart"></canvas>
 		<div class="center">
@@ -65,6 +72,8 @@
 		<script src="js/charts.js"></script>
 		<script src="js/saving.js"></script>
 		<script src="js/md5.js"></script>
+		<div style="margin-bottom: 140px"></div>
+		<p>||</p>
 		</div>
 		
 		

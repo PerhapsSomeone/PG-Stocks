@@ -11,6 +11,11 @@ function addData(chart, label, data) {
     chart.update();
 }
 
+function clearGraph(chart) {
+    chart.data.labels = [];
+    chart.data.datasets.data = [];
+}
+
 var gügleChart = new Chart(document.getElementById("gügleChart"), {
     "type": "line",
     "data": {

@@ -12,7 +12,7 @@ class stock {
 		this.chart = chart;
 		this.owned = 0;
   	}
-  	
+	
 	get price() {
 	    return this.getPrice();
 	}
@@ -95,3 +95,9 @@ function loop() {
 }
 
 loop();
+
+function clearAll(){
+	clearGraph(gügleChart);
+	clearGraph(juhuuChart);
+	clearGraph(micronsoftChart);
+}
